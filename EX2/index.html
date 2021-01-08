@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var age = prompt("Entrez votre age : ");
+      commentaire(age);
+      function commentaire(agePersonne) {
+        if (agePersonne >= 1 && agePersonne <= 17) {
+          alert("Vous n'etes pas encore majeur");
+        } else if (agePersonne >= 18 && agePersonne <= 49) {
+          alert("Vous etes majeur mais pas encore senior");
+        } else if (agePersonne >= 50 && agePersonne <= 59) {
+          alert("Vous etes senior mais pas encore retraité");
+        } else if (agePersonne >= 60 && agePersonne <= 120) {
+          alert("Vous etes retraité, profitez de votre temps libre");
+        }
+      }
+    </script>
+  </body>
+</html>
